@@ -23,7 +23,8 @@ Do some data science.
 `@hint`
 
 
-`@pre_exercise_code`
+
+`@sample_code`
 ```{r}
 # 1) Set Parameters
 
@@ -110,10 +111,7 @@ for(k in 1:length(sample.size)){
 
 
 # 6) Create Power Plot
-
-
 ```
-
 `@solution`
 ```{r}
 # 1) Set Parameters
@@ -234,9 +232,7 @@ for(k in 1:length(sample.size)){
   
   plot.test <- ggplot(summary.results, aes(x = effect.size, 
                                            y = power, group = sample.size))
-  plot.test + geom_line(aes(color = sample.size), size = .8) 
-
-
+  plot.test + geom_line(aes(color = sample.size), size = .8)
 ```
 
 
